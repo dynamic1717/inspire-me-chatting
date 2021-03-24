@@ -1,0 +1,11 @@
+{
+  "messages": [
+    {
+      "messageId": "1",
+      "userId": 1,
+      "senderName": "Admin",
+      "messageText": "Message from initial messages db state. Welcome to chat!",
+      "createdAt": "2021-01-14"
+    }
+  ]
+}
