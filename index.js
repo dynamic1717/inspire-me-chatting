@@ -1,7 +1,7 @@
 const app = require('express')()
-const http = require('http').createServer(app)
 const path = require('path')
-const io = require('socket.io')(http, {
+const server = require('http').createServer(app)
+const io = require('socket.io')(server, {
   cors: {
     origin: '*',
   },
@@ -37,6 +37,6 @@ if (process.env.NODE_ENV === 'production') {
 
 const PORT = process.env.PORT || 5000
 
-http.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`Server has been started on port ${PORT}...`)
 })
