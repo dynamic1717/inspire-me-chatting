@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import io from 'socket.io-client'
 import { useBeforeUnload } from './useBeforeUnload'
 
-const SERVER_URL = 'http://localhost:5000'
+const SERVER_URL = window.location.href
 
 export const useChat = (userId, username, roomId) => {
   const [users, setUsers] = useState([])
