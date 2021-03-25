@@ -15,9 +15,9 @@ export const useChat = (userId, username, roomId) => {
       query: roomId,
     })
 
-    socketRef.current.onAny((event, ...args) => {
-      console.log(event, args)
-    })
+    // socketRef.current.onAny((event, ...args) => {
+    //   console.log(event, args)
+    // })
 
     if (userId) {
       socketRef.current.emit('user:add', { username, userId })

@@ -18,8 +18,6 @@ const NewChat = () => {
 
   const activeUsers = Object.values(users).filter((u) => u.online).length
 
-  console.log(users)
-
   const handleChangeName = (e) => {
     setName(e.target.value)
   }
